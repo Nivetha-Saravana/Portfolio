@@ -9,7 +9,7 @@ function About() {
                 
                 <div className="row">
                     <div className="col-6">
-                        <h2 className="ff-jose fw-bold ls-2">Nivetha</h2>
+                        <h2 className="ff-jose fw-bold ls-2">Nivetha S</h2>
                     </div>
                 </div>
                 <hr></hr>

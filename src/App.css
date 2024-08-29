@@ -1,0 +1,262 @@
+/* 
+    Color Scheme:
+    Background: #1C1C1C (Very Dark Grey)
+    Primary Text: #E76F51 (Terra Cotta)
+    Secondary Text: #FFFFFF (White)
+    Accent: #264653 (Dark Teal)
+    Illustrations: #E76F51 (Terra Cotta), #F4A261 (Sandy Orange)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Quicksand&display=swap');
+
+html, body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #1C1C1C;
+    color: #FFFFFF; /* White */
+}
+
+.ff-jose {
+    font-family: 'Jost', sans-serif;
+}
+
+.font-big {
+    font-family: 'Jost', sans-serif;
+    font-size: 50px;
+    font-weight: 700; /* Bold */
+    letter-spacing: 2px;
+}
+
+.bg-dark {
+    background-color: #272525 !important; /* Very Dark Grey */
+}
+
+.bg-blue {
+    background-color: #272525; /* Dark Teal */
+}
+
+.text-red {
+    color: #a13e92; /* Terra Cotta */
+}
+
+.text-black {
+    color: #1C1C1C; /* Very Dark Grey */
+}
+
+.dropdown-item:active {
+    background-color: #272525 !important; /* Dark Teal */
+}
+
+.active {
+    color: #9e1f8b !important; /* Terra Cotta */
+    background-color: #1C1C1C !important; /* Very Dark Grey */
+    font-weight: 600;
+    transition: transform 0.2s;
+    transform: scale(1.1);
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottomTechnology {
+    0% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slide-in-left {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+}
+
+.slide-in-top {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInTop;
+}
+
+.slide-in-bottom {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInBottom;
+}
+
+/* Transition */
+
+.animate-charcter {
+    background-image: linear-gradient(-225deg,#FFFFFF,#9e1f8b,#9e1f8b,#FFFFFF);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Home */
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+/* Skills */
+
+.mw-fc {
+    max-width: fit-content;
+}
+
+/* Resume */
+
+li::marker {
+    color: #9e1f8b; /* Terra Cotta */
+    font-size: 2em;
+}
+
+.blue-label {
+    background-color: #272525; /* Dark Teal */
+    width: max-content;
+}
+
+.zoom-on-hover:hover {
+    transition: transform 0.2s;
+    transform: scale(1.1);
+}
+
+/* Portfolio */
+
+.portfolio-link:hover {
+    background-color: #9e1f8b; /* Terra Cotta */
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+/* Resume.css */
+.ff-jose {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #fff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #5a6268;
+}
+
+.bg-dark {
+    background-color: #343a40;
+}
+
+hr {
+    border: 1px solid #6c757d;
+}
+
+h4, h2 {
+    color: #fff;
+}
+
+.ff-jose.ls-2 {
+    letter-spacing: 2px;
+}
+
+.ff-jose.fw-bold {
+    font-weight: bold;
+}
+
+.resume-button {
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.resume-button:hover {
+    background-color:  #1b1818c0;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 12px;
+}
+
+
+
+

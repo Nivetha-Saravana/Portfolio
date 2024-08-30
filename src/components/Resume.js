@@ -47,7 +47,7 @@ function Resume() {
         <Fragment>
             <div className="resume-container">
                 <div className="resume-header">
-                    <h2 className="name-title">Nivetha</h2>
+                    <h2 className="name-title">Nivetha S</h2>
                     <a
                         href="../images/Resume.pdf"
                         download="Nivetha_Resume.pdf"

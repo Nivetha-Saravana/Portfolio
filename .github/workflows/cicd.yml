@@ -3,7 +3,7 @@ name: CICD
 on:
   push:
     branches:
-      - main
+      - deploy-to-ec2
 
 jobs:
   build:
@@ -14,17 +14,17 @@ jobs:
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Docker Image
-        run: docker build -t nivetha077/react-portfolio .
+        run: docker build -t nivetha77/react-portfolio-deployed-to-ec2 .
       - name: Publish image to docker hub
-        run: docker push nivetha077/react-portfolio:latest   
+        run: docker push nivetha77/react-portfolio-deployed-to-ec2:latest   
 
   deploy: 
     needs: build
     runs-on: self-hosted   
     steps:
       - name: Pull image from docker hub
-        run: docker pull nivetha077/react-portfolio:latest 
+        run: docker pull nivetha77/react-portfolio-deployed-to-ec2:latest 
       - name: Delete Old Container
         run: docker rm -f reactContainer
       - name: Run docker container
-        run: docker run -d -p 3000:80 --name reactContainer nivetha077/react-portfolio   
+        run: docker run -d -p 3000:80 --name reactContainer nivetha77/react-portfolio-deployed-to-ec2   

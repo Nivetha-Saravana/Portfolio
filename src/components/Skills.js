@@ -46,7 +46,6 @@ function Skills() {
                                 <div className='mx-2 my-3 border rounded py-1 px-2 mw-fc'>
                                     <span><SiAmazonaws className='fs-4'/> AWS</span>
                                 </div>
-                                
                             </div>
 
                             
